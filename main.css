@@ -18,15 +18,15 @@ h2, p {
     height: 100%;
     width: 45%;
     background-image: linear-gradient(to left, rgba(251, 251, 251, .05),
-    rgba(251, 251, 251, .3), rgba(251, 251, 152, .6),
+    rgba(251, 251, 251, .3), rgba(251, 251, 251, .6),
     rgba(251, 251, 251, .3), rgba(251, 251, 251, .05));
 
     background-image: -moz-linear-gradient(to left,rgba(251, 251, 251, .05),
-    rgba(251, 251, 251, .3), rgba(251, 251, 152, .6),
+    rgba(251, 251, 251, .3), rgba(251, 251, 251, .6),
     rgba(251, 251, 251, .3), rgba(251, 251, 251, .05));
 
     background-image: -webkit-linear-gradient(to left,rgba(251, 251, 251, .05),
-    rgba(251, 251, 251, .3), rgba(251, 251, 152, .6),
+    rgba(251, 251, 251, .3), rgba(251, 251, 251, .6),
     rgba(251, 251, 251, .3), rgba(251, 251, 251, .05));
 
     animation: loading 1s infinite;
@@ -41,4 +41,48 @@ h2, p {
         100% {
             left: 100%;
         }
+    }
+
+    .card {
+        margin: 20px;
+        height: 260px;
+        width: 400px;
+        position: relative;
+        float: left;
+    }
+
+    .card-image {
+        height: 200px;
+        width: 400px;
+        position: relative;
+    }
+
+    .card-content {
+        margin-top: 20px;
+        min-height: 40px;
+        display: flex;
+    }
+
+    .card-avatar {
+        width: 40px;
+        float: left;
+        flex: none;
+    }
+
+    .card-avatar-text {
+        margin-left: 20px;
+        float: left;
+    }
+
+    .card-content, .card-text, .card-avatar, .card-avatar-text {
+        height: 40px;
+        position: relative;
+    }
+
+    .card-content, .card-text, .card-avatar-text {
+        width: 100%;
+    }
+
+    .circular {
+        border-radius: 50%;
     }
